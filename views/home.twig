@@ -1,0 +1,29 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+    <main>
+        <div class="content__container">
+            <div class="calendar">
+                <div class="calendar__nav">
+                    <div class="calendar__date">
+                        <div class="calendar__m"></div>
+                        <div class="calendar__y"></div>
+                    </div>
+                    <div class="calendar__nav--arrows">
+                        <button class="calendar__arrow" type="button" onclick="prevMonth()"><</button>
+                        <button class="calendar__arrow" type="button" onclick="nextMonth()">></button>
+                    </div>
+                </div>
+                <table class="calendar__content"></table>
+            </div>
+            <div class="events">
+                <h2>Events</h2>
+                <ul class="events__list">
+{#                    {% for reservation in reservations %}#}
+{#                        <li class="events__list--body">{{ reservation.id }} {{ reservation.title }} {{ reservation.date | date('Y-m-d') }} {{ reservation.time | date('H:i:s') }}</li>#}
+{#                    {% endfor %}#}
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock %}
