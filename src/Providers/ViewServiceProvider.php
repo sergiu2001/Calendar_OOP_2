@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Config\Config;
-use App\Views\Extensions\RouteExtension;
-use App\Views\View;
+use Config\Config;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Route\Router;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
+use Views\Extensions\RouteExtension;
+use Views\View;
 
 class ViewServiceProvider extends AbstractServiceProvider
 {

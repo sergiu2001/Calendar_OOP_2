@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Middleware;
 
-use App\Auth\Auth;
+use Auth\Auth;
 use Laminas\Diactoros\Response\RedirectResponse;
 use League\Route\Router;
 use Psr\Http\Message\ResponseInterface;

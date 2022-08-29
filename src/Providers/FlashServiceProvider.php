@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Session\Flash;
-use App\Session\SessionStore;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Session\Flash;
+use Session\SessionStore;
 
 class FlashServiceProvider extends AbstractServiceProvider
 {

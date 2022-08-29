@@ -2,16 +2,13 @@
 
 declare(strict_types=1);
 
-use App\{
-    Auth\Auth,
-    Config\Config,
-    Exceptions\Handler,
-    Providers\ConfigServiceProvider,
-    Session\SessionStore,
-    Views\View
-};
+use Config\Config;
 use Dotenv\Exception\InvalidPathException;
+use Exceptions\Handler;
 use League\{Container\Container, Container\ReflectionContainer, Route\Router};
+use Providers\ConfigServiceProvider;
+use Session\SessionStore;
+use Views\View;
 
 require_once dirname(__DIR__).'/vendor/autoload.php';
 

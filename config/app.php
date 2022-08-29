@@ -1,22 +1,21 @@
 <?php
 
-use App\Middleware\AuthenticateFromCookie;
-use App\Middleware\AuthenticateFromSession;
-use App\Middleware\ClearValidationErrors;
-use App\Middleware\CsrfGuard;
-use App\Middleware\ShareValidationErrors;
-use App\Middleware\ViewShareMiddleware;
-use App\Providers\{AppServiceProvider,
-    AuthServiceProvider,
-    CookieServiceProvider,
-    CsrfServiceProvider,
-    DatabaseServiceProvider,
-    FlashServiceProvider,
-    HashServiceProvider,
-    SessionServiceProvider,
-    ValidationServiceProvider,
-    ViewServiceProvider
-};
+use Middleware\AuthenticateFromCookie;
+use Middleware\AuthenticateFromSession;
+use Middleware\ClearValidationErrors;
+use Middleware\CsrfGuard;
+use Middleware\ShareValidationErrors;
+use Middleware\ViewShareMiddleware;
+use Providers\{AuthServiceProvider};
+use Providers\AppServiceProvider;
+use Providers\CookieServiceProvider;
+use Providers\CsrfServiceProvider;
+use Providers\DatabaseServiceProvider;
+use Providers\FlashServiceProvider;
+use Providers\HashServiceProvider;
+use Providers\SessionServiceProvider;
+use Providers\ValidationServiceProvider;
+use Providers\ViewServiceProvider;
 
 return [
     'name' => env('APP_NAME', 'Funky'),

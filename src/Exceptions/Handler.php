@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Exceptions;
 
-use App\Session\SessionStore;
-use App\Views\View;
 use Exception;
 use Laminas\Diactoros\Response;
 use Laminas\Diactoros\Response\RedirectResponse;
 use Psr\Http\Message\ResponseInterface;
 use ReflectionClass;
+use Session\SessionStore;
+use Views\View;
 
 class Handler
 {

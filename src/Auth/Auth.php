@@ -3,12 +3,12 @@ declare(strict_types=1);
 
 namespace App\Auth;
 
-use App\Auth\Hashing\Hasher;
-use App\Cookie\CookieJar;
-use App\Entities\User;
-use App\Session\SessionStore;
+use Auth\Hashing\Hasher;
+use Cookie\CookieJar;
 use Doctrine\ORM\EntityManager;
+use Entities\User;
 use Exception;
+use Session\SessionStore;
 
 class Auth
 {

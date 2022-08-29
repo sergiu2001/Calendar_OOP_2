@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Cookie;
 
+use function App\Cookie\setcookie;
+
 class CookieJar
 {
     protected string $path = '/';

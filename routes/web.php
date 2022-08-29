@@ -4,14 +4,14 @@ global $router;
 /** @var Container $container */
 global $container;
 
-use App\Controllers\{Auth\LoginController,
-    Auth\LogoutController,
-    Auth\RegisterController,
-    HomeController,
-    ReservationController
-};
-use App\Middleware\{Authenticated, Guest};
+use Controllers\{HomeController};
+use Controllers\Auth\LoginController;
+use Controllers\Auth\LogoutController;
+use Controllers\Auth\RegisterController;
+use Controllers\ReservationController;
 use League\{Container\Container, Route\RouteGroup, Route\Router};
+use Middleware\{Guest};
+use Middleware\Authenticated;
 
 // Routes that need authentication in order to access
 $router->group('', function (RouteGroup $router) {

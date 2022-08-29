@@ -1,15 +1,16 @@
 <?php
 declare(strict_types=1);
 namespace App\Middleware;
-use App\Auth\Auth;
-use App\Config\Config;
-use App\Security\Csrf;
-use App\Session\Flash;
-use App\Views\View;
+use Auth\Auth;
+use Config\Config;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Security\Csrf;
+use Session\Flash;
+use Views\View;
+
 class ViewShareMiddleware implements MiddlewareInterface
 {
     public function __construct(

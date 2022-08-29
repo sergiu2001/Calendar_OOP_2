@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Security\Csrf;
-use App\Session\SessionStore;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Security\Csrf;
+use Session\SessionStore;
 
 class CsrfServiceProvider extends AbstractServiceProvider
 {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Config\Config;
+use Config\Config;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
 use League\Container\ServiceProvider\AbstractServiceProvider;

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Security\Validation\ExistsRule;
 use Doctrine\ORM\EntityManager;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
+use Security\Validation\ExistsRule;
 use Valitron\Validator;
 
 class ValidationServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface

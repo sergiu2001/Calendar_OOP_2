@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Auth\Auth;
-use App\Auth\Hashing\Hasher;
-use App\Auth\Recaller;
-use App\Cookie\CookieJar;
-use App\Session\SessionStore;
+use Auth\Auth;
+use Auth\Hashing\Hasher;
+use Auth\Recaller;
+use Cookie\CookieJar;
 use Doctrine\ORM\EntityManager;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Session\SessionStore;
 
 class AuthServiceProvider extends AbstractServiceProvider
 {

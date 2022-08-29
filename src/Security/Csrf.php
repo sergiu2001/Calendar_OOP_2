@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
 namespace App\Security;
-use App\Session\SessionStore;
+use Session\SessionStore;
+
 class Csrf
 {
     public const SESSION_KEY = '_token';

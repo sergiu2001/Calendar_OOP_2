@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Config;
 
-use App\Config\Loaders\LoaderInterface;
+use Config\Loaders\LoaderInterface;
 
 class Config
 {

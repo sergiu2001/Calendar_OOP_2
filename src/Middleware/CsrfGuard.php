@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Middleware;
 
-use App\Exceptions\CsrfTokenException;
-use App\Security\Csrf;
+use Exceptions\CsrfTokenException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Security\Csrf;
 
 class CsrfGuard implements MiddlewareInterface
 {
